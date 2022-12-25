@@ -1,4 +1,10 @@
 body {
     /* Background image gradient . Sample from https://cssgradient.io/gradient-backgrounds/ */
+    /*
+    Sample :1 
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    */
+
+    /*Sample :2 094 Cloudy Apple */ 
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
   }
