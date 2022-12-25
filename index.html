@@ -1,4 +1,8 @@
 <HTML>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+/>
   <script>
     var animatedDiv = document.getElementById("animated-div");
     setInterval(function() {
@@ -8,6 +12,9 @@
 animatedDiv.addEventListener("click", function() {
   animatedDiv.style.left = (animatedDiv.style.left === "100px") ? "200px" : "100px";
 });
+
+const element = document.querySelector('.summary');
+element.classList.add('animate__animated', 'animate__bounceOutLeft');
   </script>
           
           
@@ -23,7 +30,7 @@ animatedDiv.addEventListener("click", function() {
       <p>LinkedIn: <a href="https://linkedin.com/in/your-profile">https://linkedin.com/in/your-profile</a></p>
       <p>GitHub: <a href="https://github.com/your-username">https://github.com/your-username</a></p>
     </div>
-    <div class="col-md-9">
+    <div class="col-md-9" id="summary">
       <h2>Summary</h2>
       <p>A brief overview of your professional background and skills.</p>
       <h2>Skills</h2>
