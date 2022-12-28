@@ -8,3 +8,15 @@ body {
     /*Sample :2 094 Cloudy Apple */ 
     background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
   }
+
+
+  .timeline-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .timeline-point {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .timeline

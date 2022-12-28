@@ -1,5 +1,5 @@
 // Step 1: Create the container element
-const timelineContainer = document.createElement('div');
+const timelineContainer = document.getElementById('timelinediv').createElement('div');
 timelineContainer.classList.add('timeline-container');
 
 // Step 2: Define the data for the timeline
@@ -44,15 +44,5 @@ timelineData.forEach(point => {
   timelineContainer.appendChild(timelinePoint);
 });
 
-// Step 4: Use CSS to style the timeline
-const timelineCSS = `
-  .timeline-container {
-    display: flex;
-    flex-direction: row;
-  }
-  .timeline-point {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .timeline
+
+  
