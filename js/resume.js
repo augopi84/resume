@@ -1,48 +1,44 @@
-// Step 1: Create the container element
-const timelineContainer = document.getElementById('timelinediv');
-timelineContainer.classList.add('timeline-container');
-
-// Step 2: Define the data for the timeline
+// Define the data for the timeline
 const timelineData = [
-  {
-    date: 'Jan 1, 2022',
-    event: 'New Year\'s Day',
-    description: 'Celebrate the start of a new year!'
-  },
-  {
-    date: 'Jul 4, 2022',
-    event: 'Independence Day',
-    description: 'Celebrate the United States\' independence!'
-  },
-  {
-    date: 'Dec 25, 2022',
-    event: 'Christmas Day',
-    description: 'Celebrate the birth of Jesus Christ!'
-  }
-];
+    {
+      date: 'Jan 1, 2022',
+      event: 'New Year\'s Day',
+      description: 'Celebrate the start of a new year!'
+    },
+    {
+      date: 'Jul 4, 2022',
+      event: 'Independence Day',
+      description: 'Celebrate the United States\' independence!'
+    },
+    {
+      date: 'Dec 25, 2022',
+      event: 'Christmas Day',
+      description: 'Celebrate the birth of Jesus Christ!'
+    }
+  ];
 
-// Step 3: Create the elements for the timeline
-timelineData.forEach(point => {
-  const timelinePoint = document.createElement('div');
-  timelinePoint.classList.add('timeline-point');
+  // Get the timeline container element
+  const timeline = document.getElementById('timeline');
 
-  const timelineDate = document.createElement('p');
-  timelineDate.classList.add('timeline-date');
-  timelineDate.textContent = point.date;
+  // Dynamically generate the timeline based on the data
+  timelineData.forEach(point => {
+    // Create the timeline item element
+    const item = document.createElement('li');
 
-  const timelineEvent = document.createElement('p');
-  timelineEvent.classList.add('timeline-event');
-  timelineEvent.textContent = point.event;
+    // Create the timeline date element
+    const date = document.createElement('span');
+    date.classList.add('date');
+    date.textContent = point.date;
 
-  const timelineDescription = document.createElement('p');
-  timelineDescription.classList.add('timeline-description');
-  timelineDescription.textContent = point.description;
+    // Create the timeline content element
+    const content = document.createElement('span');
+    content.classList.add('content');
+    content.textContent = point.event;
 
-  timelinePoint.appendChild(timelineDate);
-  timelinePoint.appendChild(timelineEvent);
-  timelinePoint.appendChild(timelineDescription);
-  timelineContainer.appendChild(timelinePoint);
-});
+    // Add the date and content elements to the timeline item
+    item.appendChild(date);
+    item.appendChild(content);
 
-
-  
+    // Add the timeline item to the timeline container
+    timeline.appendChild(item);
+  });
