@@ -1,5 +1,5 @@
 // Step 1: Create the container element
-const timelineContainer = document.getElementById('timelinediv').createElement('div');
+const timelineContainer = document.getElementById('timelinediv');
 timelineContainer.classList.add('timeline-container');
 
 // Step 2: Define the data for the timeline
