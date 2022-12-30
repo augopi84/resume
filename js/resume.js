@@ -20,7 +20,7 @@ const timelineData = [
   function generateTimeline(){
   // Get the timeline container element
   const timeline = document.getElementById('timeline');
-
+console.log('generateTimeline'+timeline);
   // Dynamically generate the timeline based on the data
   timelineData.forEach(point => {
     // Create the timeline item element
