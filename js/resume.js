@@ -17,6 +17,7 @@ const timelineData = [
     }
   ];
 
+  function generateTimeline(){
   // Get the timeline container element
   const timeline = document.getElementById('timeline');
 
@@ -41,4 +42,6 @@ const timelineData = [
 
     // Add the timeline item to the timeline container
     timeline.appendChild(item);
+  
   });
+}
