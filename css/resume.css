@@ -47,3 +47,18 @@ body {
     display: inline-block;
     font-size: 16px;
   }
+
+
+
+  .profile-photo {
+    width: 200px;
+    height: 200px;
+  /* background-image: url('path/to/profile-photo.jpg');*/
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+  }
+  
+  .profile-photo:hover {
+    transform: scale(1.1);
+  }
+  
