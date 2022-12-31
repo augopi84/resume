@@ -17,13 +17,21 @@ const timelineData = [
     }
   ];
 
+  const data = [
+    ['Year', 'Sales', 'Expenses'],
+    ['2013',  1000,      400],
+    ['2014',  1170,      460],
+    ['2015',  660,       1120],
+    ['2016',  1030,      540]
+  ];
+
   google.charts.load('current', {'packages':['timeline']});
 google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
   const container = document.getElementById('timeline-chart');
   const chart = new google.visualization.Timeline(container);
-  const dataTable = google.visualization.arrayToDataTable(timelineData);
+  const dataTable = google.visualization.arrayToDataTable(data);
 
   chart.draw(dataTable);
 }
