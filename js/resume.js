@@ -18,12 +18,12 @@ const timelineData = [
   ];
 
   const data = [
-    ['Year', 'Sales', 'Expenses'],
-    ['2013',  1000,      400],
-    ['2014',  1170,      460],
-    ['2015',  660,       1120],
-    ['2016',  1030,      540]
+    ['Label', 'Start', 'End'],
+    ['Event 1', new Date(2022, 0, 1), new Date(2022, 0, 2)],
+    ['Event 2', new Date(2022, 0, 3), new Date(2022, 0, 5)],
+    ['Event 3', new Date(2022, 0, 7), new Date(2022, 0, 8)]
   ];
+  
 
   google.charts.load('current', {'packages':['timeline']});
 google.charts.setOnLoadCallback(drawChart);
