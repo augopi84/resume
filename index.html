@@ -1,25 +1,30 @@
 <HTML>
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 <link rel="stylesheet" type="text/css" href="css/resume.css">
 
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 <script src="js/resume.js"></script>
-          
+
 <div class="container">
   <div class="row">
     <div id="banner" class="banner">
-      <div class="animate__animated animate__pulse animate__delay-2s">
-      <img class="profile-photo" src="https://media.licdn.com/dms/image/C5603AQE9QRDFbQ7LWw/profile-displayphoto-shrink_400_400/0/1516323155120?e=1677715200&v=beta&t=er4fhwScL2GvBWwA2FqvZZUdCCMXRA-E05pgl4wu2JY" class="img-fluid rounded-circle mb-3" alt="Profile Picture">
-      <h1>Gopinath Chinnakaruppan</h1></div>
-      <p>Job Title</p>
-      <p>Location</p>
-      <p>Email: <a href="mailto:your@email.com">augopi84@gmail.com</a></p>
-      <p>Phone: (905) 456-7890</p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/your-profile">https://linkedin.com/in/your-profile</a></p>
-      <p>GitHub: <a href="https://github.com/your-username">https://github.com/your-username</a></p>
+      <div class="column">
+        <img class="profile-photo"
+          src="https://media.licdn.com/dms/image/C5603AQE9QRDFbQ7LWw/profile-displayphoto-shrink_400_400/0/1516323155120?e=1677715200&v=beta&t=er4fhwScL2GvBWwA2FqvZZUdCCMXRA-E05pgl4wu2JY"
+          class="img-fluid rounded-circle mb-3" alt="Profile Picture">
+      </div>
+      <div class="column">
+        <div class="animate__animated animate__pulse animate__delay-2s">
+          <h1>Gopinath Chinnakaruppan</h1>
+
+          <p>Job Title</p>
+          <p>Location</p>
+          <p>Email: <a href="mailto:your@email.com">augopi84@gmail.com</a></p>
+          <p>Phone: (905) 456-7890</p>
+          <p>LinkedIn: <a href="https://linkedin.com/in/your-profile">https://linkedin.com/in/your-profile</a></p>
+          <p>GitHub: <a href="https://github.com/your-username">https://github.com/your-username</a></p>
+        </div>
+      </div>
     </div>
     <div class="col-md-9" id="summary">
       <h2>Summary</h2>
@@ -52,11 +57,12 @@
         </div>
       </div>
       <h2>Work Experience</h2>
-         <!-- Create the container element for the timeline -->
-    <div id="timeline" class="timeline" onload="generateTimeline()"></div>
-    <div id="timeline-chart"></div>
-    <script>generateTimeline();</script>
+      <!-- Create the container element for the timeline -->
+      <div id="timeline" class="timeline" onload="generateTimeline()"></div>
+      <div id="timeline-chart"></div>
+      <script>generateTimeline();</script>
     </div>
   </div>
 </div>
+
 </HTML>

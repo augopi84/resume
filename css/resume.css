@@ -63,7 +63,7 @@ body {
     background-size: cover;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
   }
   
   /*Profile photo css */
@@ -85,5 +85,11 @@ body {
 
   .header-row {
     text-align: center;
+  }
+
+/* to show as two column*/
+  .column {
+    flex: 1; /* equal width */
+    /* or use specific width: 200px; */
   }
   
