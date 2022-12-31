@@ -86,6 +86,16 @@ body {
   text-align: center;
 }
 
+/* Header CSS with banner */
+.details {
+  color: white;
+  margin-left: 20px;
+}
+
+.details-row {
+  text-align: center;
+}
+
 /* to show as two column */
 .column {
   flex: 1;
