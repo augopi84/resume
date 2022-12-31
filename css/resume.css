@@ -88,13 +88,28 @@ body {
 }
 
 /* Header CSS with banner */
-.details P{
+.details{
   color: white;
   margin-left: 20px;
 }
 
 .details-row {
   text-align: center;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.icon:hover {
+  opacity: 0.8;
 }
 
 /* to show as two column */
