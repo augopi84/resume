@@ -50,15 +50,32 @@ body {
 
 
 
-  .profile-photo {
-    width: 200px;
-    height: 200px;
-  /* background-image: url('path/to/profile-photo.jpg');*/
-    border-radius: 50%;
-    transition: transform 0.2s ease;
-  }
   
   .profile-photo:hover {
     transform: scale(1.1);
+  }
+
+  .banner {
+    width: 100%;
+    height: 300px;
+    background-image: url('https://media.licdn.com/dms/image/D5616AQFShQtc3XFtmw/profile-displaybackgroundimage-shrink_350_1400/0/1669173027835?e=1677715200&v=beta&t=piBTZBOx18ry_Mx-SjsH45UiXimyn3-3FbZMyJTKaGs');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
   }
   
