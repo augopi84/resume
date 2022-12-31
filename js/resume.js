@@ -17,6 +17,17 @@ const timelineData = [
     }
   ];
 
+  google.charts.load('current', {'packages':['timeline']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+  const container = document.getElementById('timeline-chart');
+  const chart = new google.visualization.Timeline(container);
+  const dataTable = google.visualization.arrayToDataTable(timelineData);
+
+  chart.draw(dataTable);
+}
+  
   function generateTimeline(){
   // Get the timeline container element
   const timeline = document.getElementById('timeline');
